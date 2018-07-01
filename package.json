@@ -1,0 +1,18 @@
+{
+  "name": "datadome",
+  "version": "1.0.0",
+  "description": "provide an simple implementation of browser fingerprint",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "run": "node server.js"
+  },
+  "author": "Raphael Moutard",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mocha": "^5.2.0",
+    "phantomjs": "^2.1.7",
+    "supertest": "^3.1.0"
+  }
+}
