@@ -1,5 +1,12 @@
 version: 0.0
 os: linux
+files:
+  - source: /app.wsgi
+    destination: /var/www/picasso
+  - source: /
+    destination: /home/ec2-user/picasso
+  - source: /conf/picasso.conf
+destination: /etc/httpd/conf.d
 hooks:
   AfterInstall:
     - location: scripts/install_dependencies
