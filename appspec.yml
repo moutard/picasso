@@ -1,14 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: /app.wsgi
-    destination: /var/www/picasso
-  - source: /
-    destination: /home/ec2-user/picasso
-  - source: /conf/picasso.conf
-destination: /etc/httpd/conf.d
+  - source: server.py
+  destination: /home/ec2-user/
 hooks:
-  AfterInstall:
+  BeforeInstall:
     - location: scripts/install_dependencies
       timeout: 300
       runas: root
